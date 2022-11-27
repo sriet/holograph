@@ -1,0 +1,67 @@
+/*body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: font-url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap') format('truetype');
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#myVideo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: -1;
+    min-width: 100vw;
+    object-fit: cover;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.c-page-title__prepend {
+    /*-webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation: blink 1s infinite;*/
+    display: block;
+    width: 0.70312vw;
+    height: 0.70312vw;
+    max-height: 0.70312vw;
+    max-width: 0.70312vw;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.logo-title {
+    font-family: 'Poppins' !important;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
